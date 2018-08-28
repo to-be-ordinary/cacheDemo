@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.ehcache.org/v3"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xsi:schemaLocation="http://www.ehcache.org/v3 http://ehcache.org/schema/ehcache-core.xsd"
+    >
+
+    
+    <persistence directory="D:/cache/ehcache/xml"/>
+    
+    <cache alias="defaultXml">
+        
+        <key-type>java.lang.String</key-type>
+        <value-type>java.lang.String</value-type>
+        <resources>
+            <heap unit="entries">10</heap>
+            <disk persistent="true" unit="MB">500</disk>
+        </resources>
+    </cache>
+    
+</config>
